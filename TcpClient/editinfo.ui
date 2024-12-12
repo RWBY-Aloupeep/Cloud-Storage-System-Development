@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>EditInfo</class>
+ <widget class="QWidget" name="EditInfo">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>445</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+            background-color: rgba(245, 245, 245, 1); /* 主背景浅灰 */
+            font-family: &quot;Times New Roman&quot;;
+            font-size: 30px;
+        }
+QGraphicsView {
+    border: 1px solid #cccccc; /* 设置边框颜色 */
+    border-radius: 10px; /* 设置圆角 */
+}
+
+        QListWidget {
+            background-color: rgba(64, 83, 97, 0.9); /* 列表背景颜色 */
+            color: #FFFFFF; /* 列表文字颜色 */
+            font-size: 20px;
+            border: 2px solid rgba(64, 83, 97, 1); /* 边框颜色 */
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+        QListWidget::item {
+            background: rgba(64, 83, 97, 0.9);
+            border: none;
+            padding: 8px;
+            margin: 2px;
+        }
+
+        QListWidget::item:hover {
+            background: rgba(90, 110, 120, 1); /* 鼠标悬浮背景 */
+        }
+
+        QListWidget::item:selected {
+            background: rgba(128, 160, 190, 1); /* 选中项背景 */
+            color: #000000; /* 选中项文字颜色 */
+        }
+
+        QStackedWidget {
+            background-color: rgba(255, 255, 255, 1); /* 主视图区域背景颜色 */
+            border: 2px solid rgba(64, 83, 97, 1); /* 主视图区域边框 */
+            border-radius: 5px;
+            padding: 10px;
+        }
+        QPushButton {
+              background-color: rgba(64, 83, 97, 0.9); /* 按钮背景颜色 */
+              color: #FFFFFF; /* 按钮文字颜色 */
+              font-size: 22px;
+              border: 2px solid rgba(64, 83, 97, 1); /* 按钮边框颜色 */
+              border-radius: 5px;
+              padding: 8px 15px; /* 按钮内边距 */
+              margin: 5px; /* 增加外边距让阴影显得明显 */
+          }
+
+          QPushButton:hover {
+              background-color: rgba(90, 110, 120, 1); /* 鼠标悬浮背景 */
+              color: #E6E6E6; /* 悬浮时文字颜色 */
+              border: 2px solid rgba(64, 83, 97, 1); /* 保持边框颜色 */
+          }
+
+          QPushButton:pressed {
+              background-color: rgba(128, 160, 190, 1); /* 按下时背景 */
+              color: #000000; /* 按下时文字颜色 */
+              border: 2px solid rgba(90, 110, 120, 1); /* 按下时边框颜色 */
+          }
+          QPushButton:disabled {
+              background-color: rgba(200, 200, 200, 1); /* 禁用时背景 */
+              color: #A0A0A0; /* 禁用时文字颜色 */
+              border: 2px solid rgba(180, 180, 180, 1); /* 禁用时边框颜色 */
+          }
+QLabel {
+    background: rgba(85, 170, 255, 0.0); /* 完全透明背景 */
+    color: black;
+    font-family: &quot;Times New Roman&quot;;
+    font-size: 25px;
+    font-weight: bold; /* 加粗 */
+}</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout_6">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="1,1,1">
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QGraphicsView" name="pic_gv"/>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="font">
+          <font>
+           <family>Times New Roman</family>
+           <pointsize>-1</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>UserName:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="name_lb">
+         <property name="text">
+          <string>usrname</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_5">
+       <item>
+        <widget class="QLabel" name="label_5">
+         <property name="text">
+          <string>VIP:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="vip_lb">
+         <property name="text">
+          <string>VIP_status</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string>Old Pwd:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="opwd_le"/>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QLabel" name="label_3">
+         <property name="text">
+          <string>New Pwd:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="npwd_le"/>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QPushButton" name="changepwd_pb">
+       <property name="text">
+        <string>Change Pwd</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="changepic_pb">
+       <property name="text">
+        <string>Change Pic</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="VipApply_pb">
+       <property name="text">
+        <string>VIP Apply</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

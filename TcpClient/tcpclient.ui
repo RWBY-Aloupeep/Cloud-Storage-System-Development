@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TcpClient</class>
+ <widget class="QWidget" name="TcpClient">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1068</width>
+    <height>580</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Arial</family>
+    <pointsize>-1</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>TcpClient</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">* {
+    background: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: &quot;Arial&quot;; /* 字体设置 */
+}
+
+QLineEdit {
+    color: rgb(245,245,245);
+    background-color: rgba(64, 83, 97, 0.8); /* 半透明背景 */
+    font-size: 20px;
+    border-style: outset;
+    border-radius: 10px;
+	height: 30px;
+    font-family: &quot;Arial&quot;;
+    padding: 5px; /* 内边距使内容不贴边 */
+    border: 2px solid #8d98a1;
+}
+
+/* 鼠标选中 QLineEdit 开始输入时改变背景色 */
+QLineEdit:focus {
+    background-color: rgba(100, 150, 200, 0.9); /* 输入时背景变蓝 */
+    border: 2px solid #0056b3; /* 边框颜色变蓝 */
+    color: white; /* 输入文字颜色变白 */
+}
+
+QPushButton {
+    background: rgba(206, 209, 216, 0.8); /* 半透明背景 */
+    border-style: outset;
+    border-radius: 20px;
+    font-family: &quot;Arial&quot;;
+    font-size: 20px; /* 调整字体大小为25px */
+    border: 2px solid rgba(64, 64, 64, 0.5); /* 半透明边框 */
+    padding: 10px; /* 内边距 */
+}
+
+/* 鼠标悬停效果 */
+QPushButton:hover {
+    background: rgba(224, 224, 224, 1); /* 鼠标悬停变亮 */
+    border-color: rgba(0, 120, 215, 0.8); /* 边框颜色变蓝 */
+    color: rgba(0, 0, 0, 0.8); /* 文字颜色加深 */
+}
+
+/* 按下效果 */
+QPushButton:pressed {
+    background-color: rgba(100, 150, 200, 0.9);
+    border-style: inset;
+    color: white; /* 按下时文字变白 */
+}
+
+QLabel {
+    background: rgba(85, 170, 255, 0.0); /* 完全透明背景 */
+    color: black;
+    font-family: &quot;Arial&quot;;
+    font-size: 20px;
+    font-weight: bold; /* 加粗 */
+    text-align: center;
+}
+
+/* 鼠标悬停时文字颜色变化 */
+QLabel:hover {
+    color: #0056b3; /* 鼠标悬停时文字变蓝 */
+}
+
+#label_2 {
+    color: #FFA500; /* 修改文字颜色 */
+    font-size: 26px; /* 增大字体大小 */
+    font-family: &quot;Arial&quot;; /* 设置字体 */
+    font-weight: bold; /* 加粗字体 */
+	text-align: center;
+}</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout_5">
+   <item>
+    <widget class="QFrame" name="frame">
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap>../../Desktop/1733561653626.png</pixmap>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <spacer name="verticalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_2">
+            <property name="text">
+             <string>Welcome to Cloud System!</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="verticalSpacer_4">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout">
+              <item>
+               <widget class="QLabel" name="name_lab">
+                <property name="font">
+                 <font>
+                  <family>Arial</family>
+                  <pointsize>-1</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>User Name</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="name_le">
+                <property name="font">
+                 <font>
+                  <family>Arial</family>
+                  <pointsize>-1</pointsize>
+                 </font>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_2">
+              <item>
+               <widget class="QLabel" name="pwd_lab">
+                <property name="font">
+                 <font>
+                  <family>Arial</family>
+                  <pointsize>-1</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Password</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="pwd_le">
+                <property name="font">
+                 <font>
+                  <family>Arial</family>
+                  <pointsize>-1</pointsize>
+                 </font>
+                </property>
+                <property name="echoMode">
+                 <enum>QLineEdit::Password</enum>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <spacer name="verticalSpacer">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QPushButton" name="login_pb">
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>-1</pointsize>
+                <weight>50</weight>
+                <bold>false</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>Log in</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_3">
+              <item>
+               <widget class="QPushButton" name="regist_pb">
+                <property name="text">
+                 <string>Register</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>28</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="QPushButton" name="cancel_pb">
+                <property name="font">
+                 <font>
+                  <family>Arial</family>
+                  <pointsize>-1</pointsize>
+                  <weight>50</weight>
+                  <bold>false</bold>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Deregister</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <spacer name="verticalSpacer_3">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
