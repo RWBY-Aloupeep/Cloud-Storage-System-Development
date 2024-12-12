@@ -8,7 +8,6 @@ The files uploaded by users to the server are encrypted and cannot be directly a
 
 For thread management, we chose **multithreading** instead of a **thread pool** because it offers greater flexibility in thread management. Each thread can be independently created and controlled, making it ideal for tasks with varying execution times or resource needs. For simple, occasional tasks, creating threads on demand avoids the complexity and resource overhead of managing a thread pool. This approach also allows for immediate thread destruction, preventing idle threads that may arise in a thread pool. 
 
-Additionally, to manage system resources, we will implement a mechanism to **clean up inactive connections** using a list instead of a max-heap, as mentioned in the proposal. The reason can be referred to in [heap and list](#heap-and-list).
-
+Additionally, to manage system resources, we will implement a mechanism to **clean up inactive connections** using a list instead of a max-heap, as mentioned in the proposal.
 On top of that, we use the **MD5 algorithm** for the integrity check instead of **SHA-256** as mentioned in the proposal.
 
