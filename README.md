@@ -16,7 +16,7 @@ On top of that, we use the **MD5 algorithm** for the integrity check instead of 
 1. **Include QT Modules:**
    add network in TcpClient.pro
    add network and sql in TcpServer.pro
-2. **Install zip and unzip:**
+2. **Install zip and unzip**
 3. **Install OpenSSL:**
    1. Download OpenSSL
    2. Include the path in TcpClient.pro
